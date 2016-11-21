@@ -20,9 +20,14 @@
   a,
   a:hover,
   a:focus {
-    color: #333;
+    color: $white;
     text-decoration: none;
   }
+}
+
+.site-title::before {
+  content: url('images/teacher-stick-figure-transparent-white-50-rotate.png');
+  transform: rotate(20deg);
 }
 
 .header-image {

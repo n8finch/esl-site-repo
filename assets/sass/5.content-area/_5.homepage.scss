@@ -1,0 +1,35 @@
+#homepage-main-section{
+  height: 80vh;
+  text-align: center;
+
+
+  #home-location-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div.home-location-option-boxes {
+
+        padding: 20px 40px;
+        margin: 10px 20px;
+        border: 1px solid $color__shadow;
+
+        span {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+
+      }
+
+    div.home-location-option-boxes:hover {
+      background-color: $color__shadow;
+      color: $white;
+      border: 1px solid $white;
+
+    }
+
+  }
+}
+
+

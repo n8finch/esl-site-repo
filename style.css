@@ -774,7 +774,7 @@ th:first-child {
 
 .site-inner {
   clear: both;
-  padding-top: 40px;
+  padding-top: 0;
   word-wrap: break-word;
 }
 
@@ -1190,7 +1190,8 @@ img.alignright,
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: #fff;
+  background-color: #2A3132;
+  color: #fff;
 }
 
 .site-header > .wrap {
@@ -1218,8 +1219,13 @@ img.alignright,
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
+}
+
+.site-title::before {
+  content: url("images/teacher-stick-figure-transparent-white-50-rotate.png");
+  transform: rotate(20deg);
 }
 
 .header-image .title-area {
@@ -1278,7 +1284,7 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   display: block;
   padding: 32px 20px;
@@ -1289,8 +1295,8 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #763626;
+  text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1535,6 +1541,30 @@ p.entry-meta {
 .archive-pagination .active a {
   background-color: #c3251d;
   color: #fff;
+}
+
+#homepage-main-section {
+  height: 80vh;
+  text-align: center;
+}
+#homepage-main-section #home-location-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#homepage-main-section #home-location-options div.home-location-option-boxes {
+  padding: 20px 40px;
+  margin: 10px 20px;
+  border: 1px solid #2A3132;
+}
+#homepage-main-section #home-location-options div.home-location-option-boxes span {
+  font-size: 24px;
+  font-weight: bold;
+}
+#homepage-main-section #home-location-options div.home-location-option-boxes:hover {
+  background-color: #2A3132;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 /* # Sidebars
