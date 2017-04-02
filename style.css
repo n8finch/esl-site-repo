@@ -1224,7 +1224,6 @@ img.alignright,
 }
 
 .site-title::before {
-  content: url("images/teacher-stick-figure-transparent-white-50-rotate.png");
   transform: rotate(20deg);
 }
 
@@ -1580,6 +1579,7 @@ p.entry-meta {
 }
 
 #homepage-ad-section {
+  margin: 50px auto;
   padding: 10px 0;
 }
 #homepage-ad-section .home-location-ad-box {
@@ -1590,6 +1590,10 @@ p.entry-meta {
   width: 728px;
 }
 
+.hidden {
+  display: none;
+}
+
 #homepage-job-postings-section {
   display: flex;
   flex-wrap: wrap;
@@ -1597,9 +1601,57 @@ p.entry-meta {
 }
 #homepage-job-postings-section .home-job-postings-container {
   flex: 3;
+  border: 1px solid;
+  background-color: white;
+  max-width: 780px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 45px;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular {
+  background-color: #999999;
+  color: white;
+  display: inline-flex;
+  margin: 0 auto 30px;
+  max-width: 675px;
+  width: 100%;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-icon {
+  background-color: #2BA12E;
+  border: 1px solid #222;
+  color: white;
+  font-size: 4em;
+  max-width: 150px;
+  text-align: center;
+  width: 35%;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content {
+  border: 1px solid #222;
+  padding: 10px 20px;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content ul li {
+  background-color: white;
+  border: 1px solid #222;
+  border-radius: 5px;
+  color: #000;
+  display: inline;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin: 5px 15px;
 }
 #homepage-job-postings-section .home-job-postings-sidebar {
   flex: 1;
+}
+#homepage-job-postings-section .home-job-postings-sidebar .job-posting-sidebar-element {
+  border: 1px solid #222;
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 40px 10px;
+  text-align: center;
 }
 
 /* # Sidebars

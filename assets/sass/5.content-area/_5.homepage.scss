@@ -41,6 +41,7 @@
 #homepage-ad-section {
 
 	// background-color: #2A3132;
+	margin: 50px auto;
 	padding: 10px 0;
 
 	.home-location-ad-box {
@@ -51,4 +52,9 @@
 		width:728px;
 	}
 
+}
+
+
+.hidden {
+	display: none;
 }

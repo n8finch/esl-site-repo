@@ -39,6 +39,8 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_script( 'fontawesome-icons', 'https://use.fontawesome.com/f795754b74.js', array(), time(), true );
 
+	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ), time(), true );
+
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 	$output = array(
 		'mainMenu' => __( 'Menu', 'genesis-sample' ),
@@ -122,6 +124,6 @@ function genesis_sample_comments_gravatar( $args ) {
 //* Customize the entire footer
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] - All rights reserved &middot; <a href="http://mydomain.com">ESL Theme</a> &middot; Built on the <a href="http://www.studiopress.com/themes/genesis" title="Genesis Framework">Genesis Framework</a>';
+	$creds = '[footer_copyright] - All rights reserved &middot; <a href="https://esljobhunters.com">ESLJobHunters.com</a>';
 	return $creds;
 }

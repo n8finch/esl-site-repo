@@ -42,8 +42,7 @@ function esl_homepage_top_content() {
 		</div> -->
 
 		<div id="home-teacher-intro">
-			<p><img src="wp-content/themes/esl-theme/images/main-logo.png"/></p>
-			<h2>Where do you want to teach?</h2>
+			<img src="wp-content/themes/esl-theme/images/main-logo.png"/>
 		</div>
 
 		<div id="home-location-options">
@@ -118,38 +117,44 @@ function esl_homepage_job_postings_section() {
 		<div class="home-job-postings-container">
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="">U</span>
+					<p>U</p>
 				</div>
-				<div class="job-posting-singular-preview">
+				<div class="job-posting-singular-content">
 					<h3>School Advertised</h3>
-					<span class="fa fa-money"> 2.5 million KRW</span>
-					<span class="fa fa-check-square-o"> M.A., 2 years</span>
-					<span class="fa fa-map-marker"> Seoul, South Korea</span>
-					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
+					<ul>
+						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
+						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
+						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
+						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
+					</ul>
 				</div>
 			</div>
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="">U</span>
+					<p>U</p>
 				</div>
-				<div class="job-posting-singular-preview">
+				<div class="job-posting-singular-content">
 					<h3>School Advertised</h3>
-					<span class="fa fa-money"> 2.5 million KRW</span>
-					<span class="fa fa-check-square-o"> M.A., 2 years</span>
-					<span class="fa fa-map-marker"> Seoul, South Korea</span>
-					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
+					<ul>
+						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
+						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
+						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
+						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
+					</ul>
 				</div>
 			</div>
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="">U</span>
+					<p>U</p>
 				</div>
-				<div class="job-posting-singular-preview">
+				<div class="job-posting-singular-content">
 					<h3>School Advertised</h3>
-					<span class="fa fa-money"> 2.5 million KRW</span>
-					<span class="fa fa-check-square-o"> M.A., 2 years</span>
-					<span class="fa fa-map-marker"> Seoul, South Korea</span>
-					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
+					<ul>
+						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
+						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
+						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
+						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -158,10 +163,12 @@ function esl_homepage_job_postings_section() {
 		<!-- Sidebar -->
 		<div class="home-job-postings-sidebar">
 			<div class="job-posting-sidebar-element">
-				<h3>Some ad</h3>
+				<h3>Video of life in Seoul</h3>
+				<iframe width="325" height="175" src="https://www.youtube.com/embed/-IOTR53ga8M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div class="job-posting-sidebar-element">
 				<h3>Some other ad</h3>
+				<img src="https:" />
 			</div>
 
 		</div>
