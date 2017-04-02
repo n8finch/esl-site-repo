@@ -2,16 +2,21 @@
   text-align: center;
 
 
-  #home-location-options {
+  #home-location-options,
+  #home-filter-options {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+	max-width: 805px;
+	margin: 0 auto;
 
-    div.home-location-option-boxes {
+    div.home-location-option-boxes,
+	div.home-filter-option-boxes {
 
         padding: 20px 40px;
         margin: 10px 20px;
         border: 1px solid $color__shadow;
+		border-radius: 5px;
 
         span {
           font-size: 24px;
@@ -21,7 +26,8 @@
 
       }
 
-    div.home-location-option-boxes:hover {
+    div.home-location-option-boxes:hover,
+	div.home-filter-option-boxes:hover {
       background-color: $color__shadow;
       color: $white;
       border: 1px solid $white;
@@ -29,4 +35,20 @@
     }
 
   }
+}
+
+
+#homepage-ad-section {
+
+	// background-color: #2A3132;
+	padding: 10px 0;
+
+	.home-location-ad-box {
+		background-color: white;
+		height: 90px;
+		margin: 10px auto;
+		text-align: center;
+		width:728px;
+	}
+
 }

@@ -1546,24 +1546,60 @@ p.entry-meta {
 #homepage-main-section {
   text-align: center;
 }
-#homepage-main-section #home-location-options {
+#homepage-main-section #home-location-options,
+#homepage-main-section #home-filter-options {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 805px;
+  margin: 0 auto;
 }
-#homepage-main-section #home-location-options div.home-location-option-boxes {
+#homepage-main-section #home-location-options div.home-location-option-boxes,
+#homepage-main-section #home-location-options div.home-filter-option-boxes,
+#homepage-main-section #home-filter-options div.home-location-option-boxes,
+#homepage-main-section #home-filter-options div.home-filter-option-boxes {
   padding: 20px 40px;
   margin: 10px 20px;
   border: 1px solid #2A3132;
+  border-radius: 5px;
 }
-#homepage-main-section #home-location-options div.home-location-option-boxes span {
+#homepage-main-section #home-location-options div.home-location-option-boxes span,
+#homepage-main-section #home-location-options div.home-filter-option-boxes span,
+#homepage-main-section #home-filter-options div.home-location-option-boxes span,
+#homepage-main-section #home-filter-options div.home-filter-option-boxes span {
   font-size: 24px;
   font-weight: bold;
 }
-#homepage-main-section #home-location-options div.home-location-option-boxes:hover {
+#homepage-main-section #home-location-options div.home-location-option-boxes:hover,
+#homepage-main-section #home-location-options div.home-filter-option-boxes:hover,
+#homepage-main-section #home-filter-options div.home-location-option-boxes:hover,
+#homepage-main-section #home-filter-options div.home-filter-option-boxes:hover {
   background-color: #2A3132;
   color: #fff;
   border: 1px solid #fff;
+}
+
+#homepage-ad-section {
+  padding: 10px 0;
+}
+#homepage-ad-section .home-location-ad-box {
+  background-color: white;
+  height: 90px;
+  margin: 10px auto;
+  text-align: center;
+  width: 728px;
+}
+
+#homepage-job-postings-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+}
+#homepage-job-postings-section .home-job-postings-container {
+  flex: 3;
+}
+#homepage-job-postings-section .home-job-postings-sidebar {
+  flex: 1;
 }
 
 /* # Sidebars
@@ -1629,7 +1665,7 @@ p.entry-meta {
 @media only screen and (max-width: 1340px) {
   .site-inner,
   .wrap {
-    max-width: 100%;
+    max-width: 1140px;
   }
 
   .content-sidebar-sidebar .content-sidebar-wrap,

@@ -42,7 +42,7 @@ function esl_homepage_top_content() {
 		</div> -->
 
 		<div id="home-teacher-intro">
-			<p><img src="wp-content/themes/esl-theme/images/teacher-stick-figure-transparent.png"/></p>
+			<p><img src="wp-content/themes/esl-theme/images/main-logo.png"/></p>
 			<h2>Where do you want to teach?</h2>
 		</div>
 
@@ -53,6 +53,10 @@ function esl_homepage_top_content() {
 
 			<div class="home-location-option-boxes">
 				<span>China</span>
+			</div>
+
+			<div class="home-location-option-boxes">
+				<span>Japan</span>
 			</div>
 
 			<div class="home-location-option-boxes">
@@ -99,7 +103,7 @@ function esl_homepage_ad_section() {
 	?>
 	<section id="homepage-ad-section">
 		<div class="home-location-ad-box">
-			<span>Advertisement goes here</span>
+			<h3>Advertisement goes here</h3>
 		</div>
 	</section>
 
@@ -109,52 +113,59 @@ function esl_homepage_ad_section() {
 function esl_homepage_job_postings_section() {
 	?>
 	<section id="homepage-job-postings-section">
+
+		<!-- Job Postings -->
 		<div class="home-job-postings-container">
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="dashicons dashicons-welcome-learn-more"></span>
+					<span class="">U</span>
 				</div>
 				<div class="job-posting-singular-preview">
 					<h3>School Advertised</h3>
-					<span>2.5 million KRW</span>
-					<span>M.A., 2 years</span>
-					<span>Seoul, South Korea</span>
-					<span>Nov. 4, 2017</span>
+					<span class="fa fa-money"> 2.5 million KRW</span>
+					<span class="fa fa-check-square-o"> M.A., 2 years</span>
+					<span class="fa fa-map-marker"> Seoul, South Korea</span>
+					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
 				</div>
 			</div>
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="dashicons dashicons-welcome-learn-more"></span>
+					<span class="">U</span>
 				</div>
 				<div class="job-posting-singular-preview">
 					<h3>School Advertised</h3>
-					<span>2.5 million KRW</span>
-					<span>M.A., 2 years</span>
-					<span>Seoul, South Korea</span>
-					<span>Nov. 4, 2017</span>
+					<span class="fa fa-money"> 2.5 million KRW</span>
+					<span class="fa fa-check-square-o"> M.A., 2 years</span>
+					<span class="fa fa-map-marker"> Seoul, South Korea</span>
+					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
 				</div>
 			</div>
 			<div class="job-posting-singular">
 				<div class="job-posting-singular-icon">
-					<span class="dashicons dashicons-welcome-learn-more"></span>
+					<span class="">U</span>
 				</div>
 				<div class="job-posting-singular-preview">
 					<h3>School Advertised</h3>
-					<span>2.5 million KRW</span>
-					<span>M.A., 2 years</span>
-					<span>Seoul, South Korea</span>
-					<span>Nov. 4, 2017</span>
+					<span class="fa fa-money"> 2.5 million KRW</span>
+					<span class="fa fa-check-square-o"> M.A., 2 years</span>
+					<span class="fa fa-map-marker"> Seoul, South Korea</span>
+					<span class="fa fa-clock-o"> Nov. 4, 2017</span>
 				</div>
 			</div>
 		</div>
+		<!-- end Job Postings -->
+
+		<!-- Sidebar -->
 		<div class="home-job-postings-sidebar">
-			<div class="home-job-posting-sidebar-element">
-				<span>Some Ad</span>
+			<div class="job-posting-sidebar-element">
+				<h3>Some ad</h3>
 			</div>
-			<div class="home-job-posting-sidebar-element">
-				<span>Some Other Ad</span>
+			<div class="job-posting-sidebar-element">
+				<h3>Some other ad</h3>
 			</div>
+
 		</div>
+		<!-- end Sidebar -->
 	</section>
 
 <?php
