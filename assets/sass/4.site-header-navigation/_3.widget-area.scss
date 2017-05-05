@@ -1,8 +1,9 @@
 /* ## Widget Area
 --------------------------------------------- */
-
 .site-header .widget-area {
-  float: right;
-  text-align: right;
-  width: 800px;
+	// float: right;
+	// text-align: right;
+	// width: 800px;
+	display: flex;
+	justify-content: space-around;
 }

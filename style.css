@@ -1259,9 +1259,8 @@ img.alignright,
 /* ## Widget Area
 --------------------------------------------- */
 .site-header .widget-area {
-  float: right;
-  text-align: right;
-  width: 800px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* # Site Navigation
@@ -1557,10 +1556,13 @@ p.entry-meta {
 #homepage-main-section #home-location-options div.home-filter-option-boxes,
 #homepage-main-section #home-filter-options div.home-location-option-boxes,
 #homepage-main-section #home-filter-options div.home-filter-option-boxes {
-  padding: 20px 40px;
-  margin: 10px 20px;
+  background-color: white;
   border: 1px solid #2A3132;
   border-radius: 5px;
+  flex-grow: 1;
+  padding: 20px 40px;
+  margin: 10px 20px;
+  width: calc(100% * (1/4) - 10px - 1px);
 }
 #homepage-main-section #home-location-options div.home-location-option-boxes span,
 #homepage-main-section #home-location-options div.home-filter-option-boxes span,

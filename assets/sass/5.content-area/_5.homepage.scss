@@ -13,10 +13,13 @@
     div.home-location-option-boxes,
 	div.home-filter-option-boxes {
 
-        padding: 20px 40px;
-        margin: 10px 20px;
-        border: 1px solid $color__shadow;
+		background-color: white;
+		border: 1px solid $color__shadow;
 		border-radius: 5px;
+		flex-grow: 1;
+		padding: 20px 40px;
+        margin: 10px 20px;
+		width: calc(100% * (1/4) - 10px - 1px);
 
         span {
           font-size: 24px;
