@@ -1291,6 +1291,8 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
   color: #763626;
@@ -1321,6 +1323,7 @@ img.alignright,
   position: relative;
   width: 200px;
   word-wrap: break-word;
+  color: #2A3132;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -1610,6 +1613,9 @@ p.entry-meta {
   margin-bottom: 50px;
   padding: 45px;
 }
+#homepage-job-postings-section .home-job-postings-container a {
+  text-decoration: none;
+}
 #homepage-job-postings-section .home-job-postings-container .job-posting-singular {
   background-color: #999999;
   color: white;
@@ -1644,6 +1650,12 @@ p.entry-meta {
   font-size: 16px;
   padding: 5px 20px;
   margin: 5px 15px;
+  min-width: 150px;
+}
+#homepage-job-postings-section .home-job-postings-container .job-posting-singular:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #homepage-job-postings-section .home-job-postings-sidebar {
   flex: 1;

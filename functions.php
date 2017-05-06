@@ -127,3 +127,16 @@ function sp_footer_creds_filter( $creds ) {
 	$creds = '[footer_copyright] - All rights reserved &middot; <a href="https://esljobhunters.com">ESLJobHunters.com</a>';
 	return $creds;
 }
+
+
+
+//* Return Job Letter
+function esl_get_job_icon( $job_institution_type ) {
+
+	if( '' === $job_institution_type ) {
+		return '?';
+	}
+
+	return strtoupper(substr($job_institution_type, 0, 1));
+
+}

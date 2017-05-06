@@ -115,48 +115,23 @@ function esl_homepage_job_postings_section() {
 
 		<!-- Job Postings -->
 		<div class="home-job-postings-container">
-			<div class="job-posting-singular">
-				<div class="job-posting-singular-icon">
-					<p>U</p>
-				</div>
-				<div class="job-posting-singular-content">
-					<h3>School Advertised</h3>
-					<ul>
-						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
-						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
-						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
-						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
-					</ul>
-				</div>
-			</div>
-			<div class="job-posting-singular">
-				<div class="job-posting-singular-icon">
-					<p>U</p>
-				</div>
-				<div class="job-posting-singular-content">
-					<h3>School Advertised</h3>
-					<ul>
-						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
-						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
-						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
-						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
-					</ul>
-				</div>
-			</div>
-			<div class="job-posting-singular">
-				<div class="job-posting-singular-icon">
-					<p>U</p>
-				</div>
-				<div class="job-posting-singular-content">
-					<h3>School Advertised</h3>
-					<ul>
-						<li><span class="fa fa-money"></span> 2.5 million KRW</li>
-						<li><span class="fa fa-check-square-o"></span> M.A., 2 years</li>
-						<li><span class="fa fa-map-marker"></span> Seoul, South Korea</li>
-						<li><span class="fa fa-clock-o"></span> Nov. 4, 2017</li>
-					</ul>
-				</div>
-			</div>
+			<?php
+			$args = array(
+				'post_type' => 'job-postings', // enter your custom post type
+				'order' => 'ASC',
+				'posts_per_page'=> '12',  // overrides posts per page in theme settings
+			);
+			$loop = new WP_Query( $args );
+			if( $loop->have_posts() ):
+
+				while( $loop->have_posts() ): $loop->the_post(); global $post;
+
+				get_template_part( 'template-parts/content', 'job-card');
+
+				endwhile;
+
+			endif;?>
+
 		</div>
 		<!-- end Job Postings -->
 

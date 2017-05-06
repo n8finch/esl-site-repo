@@ -27,6 +27,8 @@
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
   color: $color__autumn;
@@ -57,6 +59,7 @@
   position: relative;
   width: 200px;
   word-wrap: break-word;
+  color: #2A3132;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
