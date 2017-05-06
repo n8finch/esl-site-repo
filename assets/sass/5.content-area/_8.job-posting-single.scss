@@ -1,0 +1,45 @@
+article.job-postings {
+
+	.apply-forward-print {
+
+		margin-bottom: 20px;
+		min-height: 75px;
+
+		a {
+			color: #2A3132;
+		}
+
+		a:hover {
+			color: #C3251D;
+		}
+
+		.two-thirds {
+			text-align: center;
+		}
+
+		.one-third {
+			text-align: right;
+
+			.fa {
+				font-size: 46px;
+				margin-left: 20px;
+			}
+		}
+	}
+
+	.job-posting-info-box {
+		border: 1px solid #cccccc;
+		font-size: 16px;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+}
+@media print {
+	.no-print {
+		display: none;
+	}
+
+	header {
+		margin-bottom: 30px;
+	}
+}
