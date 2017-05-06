@@ -35,6 +35,10 @@ add_action( 'genesis_loop', 'esl_homepage_job_postings_section' );
  * ESL Hompage Main
  */
 function esl_homepage_top_content() {
+
+	$base_url = get_stylesheet_directory_uri();
+
+
 	?>
 	<section id="homepage-main-section">
 		<!-- <div id="home-search-bar">
@@ -42,28 +46,51 @@ function esl_homepage_top_content() {
 		</div> -->
 
 		<div id="home-teacher-intro">
-			<img src="wp-content/themes/esl-theme/images/main-logo.png"/>
+			<h2>Where do you want to teach?</h2>
 		</div>
 
 		<div id="home-location-options">
-			<div class="home-location-option-boxes">
-				<span>Korea</span>
-			</div>
+			<a href="/location/south-korea/"/>
+				<div class="home-location-option-boxes">
+					<span>Korea</span>
+					<img src="<?php echo $base_url . '/images/korean-flag-circle.png'; ?>" />
+				</div>
+			</a>
 
-			<div class="home-location-option-boxes">
-				<span>China</span>
-			</div>
+			<a href="/location/china/"/>
+				<div class="home-location-option-boxes">
+					<span>China</span>
+					<img src="<?php echo $base_url . '/images/chinese-flag-circle.png'; ?>" />
+				</div>
+			</a>
 
-			<div class="home-location-option-boxes">
-				<span>Japan</span>
-			</div>
+			<a href="/location/japan/"/>
+				<div class="home-location-option-boxes">
+					<span>Japan</span>
+					<img src="<?php echo $base_url . '/images/japan-circle.png'; ?>" />
+				</div>
+			</a>
 
-			<div class="home-location-option-boxes">
-				<span>Anywhere</span>
-			</div>
+			<a href="/job-postings/"/>
+				<div class="home-location-option-boxes">
+					<span>Anywhere</span>
+					<img src="<?php echo $base_url . '/images/globe-circle.png'; ?>" />
+				</div>
+			</a>
+
+			<a href="/#home-job-postings-section"/>
+				<div class="home-location-option-boxes see-all">
+					<span>See most recent jobs</span>
+				</div>
+			</a>
+
+
+			<!-- <div class="home-location-option-boxes">
+				<span>More Options</span>
+			</div> -->
 		</div>
 
-		<div id="home-filter-options">
+		<!-- <div id="home-filter-options">
 			<div class="home-filter-option-boxes">
 				<span>University</span>
 			</div>
@@ -90,7 +117,7 @@ function esl_homepage_top_content() {
 			<div class="home-filter-option-boxes">
 				<span>Let's go!</span>
 			</div>
-		</div>
+		</div> -->
 
 
 	</section>
@@ -111,15 +138,17 @@ function esl_homepage_ad_section() {
 
 function esl_homepage_job_postings_section() {
 	?>
-	<section id="homepage-job-postings-section">
+	<section id="home-job-postings-section">
 
 		<!-- Job Postings -->
-		<div class="home-job-postings-container">
+		<div class="two-thirds first job-postings-container">
+			<h2>Most Recent Jobs</h2>
+
 			<?php
 			$args = array(
 				'post_type' => 'job-postings', // enter your custom post type
 				'order' => 'ASC',
-				'posts_per_page'=> '12',  // overrides posts per page in theme settings
+				'posts_per_page'=> '10',  // overrides posts per page in theme settings
 			);
 			$loop = new WP_Query( $args );
 			if( $loop->have_posts() ):
@@ -132,20 +161,17 @@ function esl_homepage_job_postings_section() {
 
 			endif;?>
 
+			<a href="/job-postings/"/>
+				<button>View all job postings</button>
+			</a>
 		</div>
 		<!-- end Job Postings -->
 
 		<!-- Sidebar -->
-		<div class="home-job-postings-sidebar">
-			<div class="job-posting-sidebar-element">
-				<h3>Video of life in Seoul</h3>
-				<iframe width="325" height="175" src="https://www.youtube.com/embed/-IOTR53ga8M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="job-posting-sidebar-element">
-				<h3>Some other ad</h3>
-				<img src="https:" />
-			</div>
 
+
+		<div class="one-third job-postings-sidebar">
+			<?php genesis_do_sidebar() ;?>
 		</div>
 		<!-- end Sidebar -->
 	</section>

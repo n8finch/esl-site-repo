@@ -1,48 +1,76 @@
-#homepage-main-section{
-  text-align: center;
+#homepage-main-section {
+	text-align: center;
+
+	#home-teacher-intro {
+		margin: 20px auto;
+		max-width: 700px;
+
+		h2 {
+			font-size: 4em;
+		}
+	}
+
+	#home-filter-options,
+	#home-location-options {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 805px;
+		margin: 0 auto;
+
+		a {
+			color: black;
+			flex-grow: 1;
+			margin: 10px 20px;
+			text-decoration: none;
+			width: calc(100% * (1/5) - 10px - 1px);
+		}
+
+		a:hover {
+			color: #C3251D;
+		}
+
+		div.home-filter-option-boxes,
+		div.home-location-option-boxes {
+			// background-color: white;
+			// border: 1px solid $color__shadow;
+			// border-radius: 5px;
+			position: relative;
+			// padding: 20px 40px;
 
 
-  #home-location-options,
-  #home-filter-options {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-	max-width: 805px;
-	margin: 0 auto;
+			span {
+				font-size: 18px;
+				font-weight: bold;
+			}
 
-    div.home-location-option-boxes,
-	div.home-filter-option-boxes {
+			img {
+				margin-top: -50px;
+				transition: ease .5s;
+			}
 
-		background-color: white;
-		border: 1px solid $color__shadow;
-		border-radius: 5px;
-		flex-grow: 1;
-		padding: 20px 40px;
-        margin: 10px 20px;
-		width: calc(100% * (1/4) - 10px - 1px);
+			img:hover {
+				margin-top: 0;
+			}
+		}
 
-        span {
-          font-size: 24px;
-          font-weight: bold;
-        }
+		div.home-location-option-boxes.see-all {
+			background-color: white;
+			border: 1px solid $color__shadow;
+			border-radius: 5px;
+			padding: 20px 40px;
+		}
 
-
-      }
-
-    div.home-location-option-boxes:hover,
-	div.home-filter-option-boxes:hover {
-      background-color: $color__shadow;
-      color: $white;
-      border: 1px solid $white;
-
-    }
-
-  }
+		div.home-filter-option-boxes:hover,
+		div.home-location-option-boxes:hover {
+			// background-color: $color__shadow;
+			// color: $white;
+			// border: 1px solid $white;
+		}
+	}
 }
 
-
 #homepage-ad-section {
-
 	// background-color: #2A3132;
 	margin: 50px auto;
 	padding: 10px 0;
@@ -52,11 +80,13 @@
 		height: 90px;
 		margin: 10px auto;
 		text-align: center;
-		width:728px;
+		width: 728px;
 	}
-
 }
 
+#homepage-job-postings-section {
+	// max-width: 1140px;
+}
 
 .hidden {
 	display: none;

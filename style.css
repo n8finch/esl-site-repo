@@ -1198,6 +1198,17 @@ img.alignright,
   padding: 5px 10px;
 }
 
+.header-widget-area .widget {
+  margin-bottom: 0;
+}
+.header-widget-area .widget_search {
+  width: 60%;
+}
+.header-widget-area .search-form,
+.header-widget-area input[type="search"] {
+  width: 100%;
+}
+
 /* ## Title Area
 --------------------------------------------- */
 .title-area {
@@ -1527,6 +1538,7 @@ p.entry-meta {
 
 .archive-pagination a {
   background-color: #fff;
+  border: 1px solid #ccc;
   color: #333;
   cursor: pointer;
   display: inline-block;
@@ -1547,40 +1559,65 @@ p.entry-meta {
 #homepage-main-section {
   text-align: center;
 }
-#homepage-main-section #home-location-options,
-#homepage-main-section #home-filter-options {
+#homepage-main-section #home-teacher-intro {
+  margin: 20px auto;
+  max-width: 700px;
+}
+#homepage-main-section #home-teacher-intro h2 {
+  font-size: 4em;
+}
+#homepage-main-section #home-filter-options,
+#homepage-main-section #home-location-options {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 805px;
   margin: 0 auto;
 }
-#homepage-main-section #home-location-options div.home-location-option-boxes,
-#homepage-main-section #home-location-options div.home-filter-option-boxes,
+#homepage-main-section #home-filter-options a,
+#homepage-main-section #home-location-options a {
+  color: black;
+  flex-grow: 1;
+  margin: 10px 20px;
+  text-decoration: none;
+  width: calc(100% * (1/5) - 10px - 1px);
+}
+#homepage-main-section #home-filter-options a:hover,
+#homepage-main-section #home-location-options a:hover {
+  color: #C3251D;
+}
+#homepage-main-section #home-filter-options div.home-filter-option-boxes,
 #homepage-main-section #home-filter-options div.home-location-option-boxes,
-#homepage-main-section #home-filter-options div.home-filter-option-boxes {
+#homepage-main-section #home-location-options div.home-filter-option-boxes,
+#homepage-main-section #home-location-options div.home-location-option-boxes {
+  position: relative;
+}
+#homepage-main-section #home-filter-options div.home-filter-option-boxes span,
+#homepage-main-section #home-filter-options div.home-location-option-boxes span,
+#homepage-main-section #home-location-options div.home-filter-option-boxes span,
+#homepage-main-section #home-location-options div.home-location-option-boxes span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#homepage-main-section #home-filter-options div.home-filter-option-boxes img,
+#homepage-main-section #home-filter-options div.home-location-option-boxes img,
+#homepage-main-section #home-location-options div.home-filter-option-boxes img,
+#homepage-main-section #home-location-options div.home-location-option-boxes img {
+  margin-top: -50px;
+  transition: ease .5s;
+}
+#homepage-main-section #home-filter-options div.home-filter-option-boxes img:hover,
+#homepage-main-section #home-filter-options div.home-location-option-boxes img:hover,
+#homepage-main-section #home-location-options div.home-filter-option-boxes img:hover,
+#homepage-main-section #home-location-options div.home-location-option-boxes img:hover {
+  margin-top: 0;
+}
+#homepage-main-section #home-filter-options div.home-location-option-boxes.see-all,
+#homepage-main-section #home-location-options div.home-location-option-boxes.see-all {
   background-color: white;
   border: 1px solid #2A3132;
   border-radius: 5px;
-  flex-grow: 1;
   padding: 20px 40px;
-  margin: 10px 20px;
-  width: calc(100% * (1/4) - 10px - 1px);
-}
-#homepage-main-section #home-location-options div.home-location-option-boxes span,
-#homepage-main-section #home-location-options div.home-filter-option-boxes span,
-#homepage-main-section #home-filter-options div.home-location-option-boxes span,
-#homepage-main-section #home-filter-options div.home-filter-option-boxes span {
-  font-size: 24px;
-  font-weight: bold;
-}
-#homepage-main-section #home-location-options div.home-location-option-boxes:hover,
-#homepage-main-section #home-location-options div.home-filter-option-boxes:hover,
-#homepage-main-section #home-filter-options div.home-location-option-boxes:hover,
-#homepage-main-section #home-filter-options div.home-filter-option-boxes:hover {
-  background-color: #2A3132;
-  color: #fff;
-  border: 1px solid #fff;
 }
 
 #homepage-ad-section {
@@ -1599,75 +1636,79 @@ p.entry-meta {
   display: none;
 }
 
-#homepage-job-postings-section {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1140px;
-}
-#homepage-job-postings-section .home-job-postings-container {
-  flex: 3;
-  border: 1px solid;
+.job-postings-container {
+  border: 1px solid #E1E2E6;
   background-color: white;
-  max-width: 780px;
-  margin-right: 50px;
   margin-bottom: 50px;
   padding: 45px;
 }
-#homepage-job-postings-section .home-job-postings-container a {
+.job-postings-container a {
   text-decoration: none;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular {
+.job-postings-container .job-posting-singular {
   background-color: #999999;
   color: white;
   display: inline-flex;
   margin: 0 auto 30px;
-  max-width: 675px;
   width: 100%;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-icon {
+.job-postings-container .job-posting-singular .job-posting-singular-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: #2BA12E;
-  border: 1px solid #222;
+  border: 1px solid #E1E2E6;
   color: white;
   font-size: 4em;
-  max-width: 150px;
+  max-width: 100px;
+  min-width: 100px;
   text-align: center;
   width: 35%;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content {
-  border: 1px solid #222;
+.job-postings-container .job-posting-singular .job-posting-singular-content {
+  border: 1px solid #E1E2E6;
   padding: 10px 20px;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content ul {
+.job-postings-container .job-posting-singular .job-posting-singular-content ul {
   display: flex;
   flex-wrap: wrap;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular .job-posting-singular-content ul li {
+.job-postings-container .job-posting-singular .job-posting-singular-content ul li {
   background-color: white;
-  border: 1px solid #222;
+  border: 1px solid #E1E2E6;
   border-radius: 5px;
   color: #000;
   display: inline;
   font-size: 16px;
   padding: 5px 20px;
   margin: 5px 15px;
-  min-width: 150px;
+  min-width: 200px;
 }
-#homepage-job-postings-section .home-job-postings-container .job-posting-singular:hover {
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+.job-postings-container .job-posting-singular:hover {
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
 }
-#homepage-job-postings-section .home-job-postings-sidebar {
-  flex: 1;
-}
-#homepage-job-postings-section .home-job-postings-sidebar .job-posting-sidebar-element {
-  border: 1px solid #222;
+
+.job-postings-sidebar {
+  border: 1px solid #E1E2E6;
   background-color: white;
   margin-bottom: 40px;
   padding: 40px 10px;
   text-align: center;
 }
 
+body.archive .site-inner {
+  margin-top: 50px;
+}
+body.archive .site-inner aside.sidebar {
+  background-color: white;
+  border: 1px solid #E1E2E6;
+}
+
+article.job-postings {
+  margin-top: 50px;
+}
 article.job-postings .apply-forward-print {
   margin-bottom: 20px;
   min-height: 75px;
@@ -1757,8 +1798,13 @@ article.job-postings .job-posting-info-box {
   padding: 60px 0;
   text-align: center;
 }
+.site-footer #menu-footer a {
+  color: #2A3132;
+}
 
 .site-footer p {
+  color: #2A3132;
+  font-weight: 600;
   margin-bottom: 0;
 }
 

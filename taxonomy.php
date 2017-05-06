@@ -7,39 +7,56 @@
  */
 
 
- remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
- add_action( 'genesis_loop', 'esl_custom_category_loop' ); // Add custom loop
+remove_action('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
+remove_action( 'genesis_archive_title_descriptions', 'genesis_do_archive_headings_open', 5, 3 );
+remove_action( 'genesis_archive_title_descriptions', 'genesis_do_archive_headings_close', 15, 3 );
+remove_action( 'genesis_archive_title_descriptions', 'genesis_do_archive_headings_headline', 10, 3 );
+remove_action( 'genesis_archive_title_descriptions', 'genesis_do_archive_headings_intro_text', 12, 3 );
+add_action( 'genesis_loop', 'esl_custom_category_loop' ); // Add custom loop
+add_action( 'genesis_loop', 'genesis_posts_nav' );
 
- function esl_custom_category_loop() {
-	 ?>
-	 <section id="homepage-job-postings-section">
-		 <!-- Job Postings -->
-		 <div class="home-job-postings-container">
-			 <?php
-			 $args = array(
-				 'post_type' => 'job-postings', // enter your custom post type
-				 'order' => 'ASC',
-				 'posts_per_page'=> '12',  // overrides posts per page in theme settings
-			 );
-			 $loop = new WP_Query( $args );
-			 if( $loop->have_posts() ):
+// add_filter( 'genesis_archive_title_descriptions', 'mod_genesis_archive_title_descriptions', 99 );
 
-				 while( $loop->have_posts() ): $loop->the_post(); global $post;
+function mod_genesis_archive_title_descriptions($content) {
 
-				 get_template_part( 'template-parts/content', 'job-card');
+	return $content;
+}
 
-				 endwhile;
+function esl_custom_category_loop() {
+?>
+	<section id="category-job-postings-section">
+	 <!-- Job Postings -->
+		<div class="job-postings-container">
+			<?php
+			global $wp_query;
+			// $args = array(
+			// 	'post_type' => 'job-postings', // enter your custom post type
+			// 	'order' => 'ASC',
+			// 	'posts_per_page'=> '12',  // overrides posts per page in theme settings
+			// );
+			// $loop = new WP_Query( $args );
+			$loop = $wp_query;
+			if( $loop->have_posts() ):
 
-			 endif;?>
+				while( $loop->have_posts() ): $loop->the_post(); global $post;
 
-		 </div>
-		 <!-- end Job Postings -->
-	 </section>
- 	<?php
- }
+				get_template_part( 'template-parts/content', 'job-card');
 
- // /** Remove Post Info */
- // remove_action('genesis_before_post_content','genesis_post_info');
- // remove_action('genesis_after_post_content','genesis_post_meta');
+				endwhile;
 
- genesis();
+			else : ?>
+			
+			<p><?php _e('Sorry, no job postings matched your criteria.'); ?></p>
+			<?php endif; ?>
+
+		</div>
+		<!-- end Job Postings -->
+	</section>
+<?php
+}
+
+// /** Remove Post Info */
+// remove_action('genesis_before_post_content','genesis_post_info');
+// remove_action('genesis_after_post_content','genesis_post_meta');
+
+genesis();

@@ -51,7 +51,11 @@ function esl_single_job_posting_content() {
 	?>
 	<div class="apply-forward-print no-print">
 		<div class="two-thirds first">
-			<button>Apply Now</button>
+			<button id="apply-now-button">Apply Now</button>
+
+			<div id="hidden-application-form" class="hidden">
+				<?php echo do_shortcode( '[gravityform id="9" title="false" description="false" ajax="true"]' ) ; ?>
+			</div>
 		</div>
 		<div class="one-third">
 			<a href="mailto:?subject=A%20job%20you%20might%20be%20interested%20in...&body=Thought%20you%20might%20be%20interested%20in%20this:%20<?php echo $job_link; ?>"/><span class="fa fa-envelope"></span></a>

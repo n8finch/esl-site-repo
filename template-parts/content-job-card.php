@@ -9,6 +9,7 @@
 
 
 // d($post);
+global $post;
 $job_title = $post->post_title;
 $job_link = get_the_permalink($post->ID);
 $job_post_meta = get_post_meta( $post->ID, '', true );
