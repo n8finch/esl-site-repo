@@ -1698,10 +1698,12 @@ p.entry-meta {
   text-align: center;
 }
 
-body.archive .site-inner {
+body.archive .site-inner,
+body.search .site-inner {
   margin-top: 50px;
 }
-body.archive .site-inner aside.sidebar {
+body.archive .site-inner aside.sidebar,
+body.search .site-inner aside.sidebar {
   background-color: white;
   border: 1px solid #E1E2E6;
 }

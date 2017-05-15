@@ -74,7 +74,7 @@ function esl_homepage_top_content() {
 			<a href="/job-postings/"/>
 				<div class="home-location-option-boxes">
 					<span>Anywhere</span>
-					<img src="<?php echo $base_url . '/images/globe-circle.png'; ?>" />
+					<img src="<?php echo $base_url . '/images/world-circle.png'; ?>" />
 				</div>
 			</a>
 

@@ -37,6 +37,8 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
+	wp_enqueue_style( 'dashicons' );
+
 	wp_enqueue_script( 'fontawesome-icons', 'https://use.fontawesome.com/f795754b74.js', array(), time(), true );
 
 	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ), time(), true );
@@ -139,4 +141,15 @@ function esl_get_job_icon( $job_institution_type ) {
 
 	return strtoupper(substr($job_institution_type, 0, 1));
 
+}
+
+
+//* Remove the site description
+remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+
+//* Customize search form input box text
+add_filter( 'genesis_search_text', 'sp_search_text' );
+function sp_search_text( $text ) {
+	// return esc_attr( '<span class="fa fa-search"></span> Find a job...' );
+	return 'Find a job...';
 }
