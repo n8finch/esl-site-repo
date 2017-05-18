@@ -1633,14 +1633,14 @@ p.entry-meta {
   width: 728px;
 }
 
-.job-postings-container ul {
+#legened ul {
   margin-bottom: 10px;
 }
-.job-postings-container ul li {
+#legened ul li {
   display: inline;
   margin-right: 10px;
 }
-.job-postings-container ul li span {
+#legened ul li span {
   background-color: #2BA12E;
   color: white;
   padding: 0 3px;
