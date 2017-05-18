@@ -1564,7 +1564,7 @@ p.entry-meta {
   max-width: 700px;
 }
 #homepage-main-section #home-teacher-intro h2 {
-  font-size: 4em;
+  font-size: 3em;
 }
 #homepage-main-section #home-filter-options,
 #homepage-main-section #home-location-options {
@@ -1584,7 +1584,7 @@ p.entry-meta {
 }
 #homepage-main-section #home-filter-options a:hover,
 #homepage-main-section #home-location-options a:hover {
-  color: #C3251D;
+  color: black;
 }
 #homepage-main-section #home-filter-options div.home-filter-option-boxes,
 #homepage-main-section #home-filter-options div.home-location-option-boxes,
@@ -1604,6 +1604,7 @@ p.entry-meta {
 #homepage-main-section #home-location-options div.home-filter-option-boxes img,
 #homepage-main-section #home-location-options div.home-location-option-boxes img {
   margin-top: -50px;
+  max-width: 115px;
   transition: ease .5s;
 }
 #homepage-main-section #home-filter-options div.home-filter-option-boxes img:hover,
@@ -1632,6 +1633,19 @@ p.entry-meta {
   width: 728px;
 }
 
+.job-postings-container ul {
+  margin-bottom: 10px;
+}
+.job-postings-container ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.job-postings-container ul li span {
+  background-color: #2BA12E;
+  color: white;
+  padding: 0 3px;
+}
+
 .hidden {
   display: none;
 }
@@ -1646,8 +1660,8 @@ p.entry-meta {
   text-decoration: none;
 }
 .job-postings-container .job-posting-singular {
-  background-color: #999999;
-  color: white;
+  background-color: #eeeeee;
+  color: #2BA12E;
   display: inline-flex;
   margin: 0 auto 30px;
   width: 100%;
@@ -1682,7 +1696,7 @@ p.entry-meta {
   font-size: 16px;
   padding: 5px 20px;
   margin: 5px 15px;
-  min-width: 200px;
+  min-width: 185px;
 }
 .job-postings-container .job-posting-singular:hover {
   -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);

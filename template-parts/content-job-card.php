@@ -15,15 +15,16 @@ $job_link = get_the_permalink($post->ID);
 $job_post_meta = get_post_meta( $post->ID, '', true );
 // d($job_post_meta);
 
-$job_institution_type = array_key_exists ( 'jp_position' , $job_post_meta ) ? get_post_meta( $post->ID, 'jp_position', true ) : '';
+$job_position = array_key_exists ( 'jp_position' , $job_post_meta ) ? get_post_meta( $post->ID, 'jp_position', true ) : '';
 $job_jp_salary = array_key_exists ( 'jp_salary', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_salary', true ) : 'not given';
 $job_required_qualifications = array_key_exists ( 'jp_requirements', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_requirements', true ) : 'not given';
 $job_location = array_key_exists ( 'jp_location', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_location', true ) : 'not given';
 $job_location_city = array_key_exists ( 'jp_location_city', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_location_city', true ) : 'not given';
 $job_application_deadline = array_key_exists ( 'application_deadline', $job_post_meta ) ? get_post_meta( $post->ID, 'application_deadline', true ) : 'not given';
+$job_school_name = array_key_exists ( 'jp_school_name', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_school_name', true ) : 'not given';
 
 //
-// d($job_institution_type) ;
+// d($job_position) ;
 // d($job_jp_salary) ;
 // d($job_required_qualifications) ;
 // d($job_location) ;
@@ -31,7 +32,7 @@ $job_application_deadline = array_key_exists ( 'application_deadline', $job_post
 // d($job_application_deadline) ;
 
 //Helper function in functions.php
-$job_posting_icon = esl_get_job_icon( $job_institution_type );
+$job_posting_icon = esl_get_job_icon( $job_position );
 
 ?>
 <a href="<?php echo $job_link; ?>">
@@ -40,7 +41,7 @@ $job_posting_icon = esl_get_job_icon( $job_institution_type );
 			<p><?php echo $job_posting_icon; ?></p>
 		</div>
 		<div class="job-posting-singular-content">
-			<h3><?php echo $job_title; ?></h3>
+			<h3><?php echo $job_position . ' | ' . $job_school_name ; ?></h3>
 			<ul>
 				<li><span class="fa fa-money"></span> <?php echo $job_jp_salary; ?></li>
 				<li><span class="fa fa-check-square-o"></span> <?php echo $job_required_qualifications; ?></li>

@@ -143,6 +143,26 @@ function esl_homepage_job_postings_section() {
 		<!-- Job Postings -->
 		<div class="two-thirds first job-postings-container">
 			<h2>Most Recent Jobs</h2>
+			<ul>
+				<li>
+					<span class"job-posting-legend">U</span> = University
+				</li>
+				<li>
+					<span class"job-posting-legend">E</span> = Elemetary/Middle School
+				</li>
+				<li>
+					<span class"job-posting-legend">H</span> = High School
+				</li>
+				<li>
+					<span class"job-posting-legend">P</span> = Private Academy
+				</li>
+				<li>
+					<span class"job-posting-legend">T</span> = Translator
+				</li>
+				<li>
+					<span class"job-posting-legend">O</span> = Other
+				</li>
+			</ul>
 
 			<?php
 			$args = array(
