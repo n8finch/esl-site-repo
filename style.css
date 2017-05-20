@@ -633,7 +633,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-  background-color: #c3251d;
+  background-color: #2BA12E;
   color: #fff;
 }
 
@@ -1209,6 +1209,11 @@ img.alignright,
   width: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+  .header-widget-area .widget_search {
+    width: 100%;
+  }
+}
 /* ## Title Area
 --------------------------------------------- */
 .title-area {
@@ -1306,7 +1311,7 @@ img.alignright,
 .genesis-nav-menu .sub-menu a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #763626;
+  color: #2BA12E;
   text-decoration: none;
 }
 
@@ -1360,6 +1365,28 @@ img.alignright,
 
 .genesis-nav-menu > .right {
   float: right;
+}
+
+#genesis-nav-primary {
+  background-color: #2BA12E;
+}
+@media only screen and (max-width: 1023px) {
+  #genesis-nav-primary {
+    background-color: white;
+  }
+  #genesis-nav-primary a {
+    color: #2A3132;
+  }
+}
+#genesis-nav-primary a:hover {
+  color: white;
+}
+#genesis-nav-primary .sub-menu a {
+  color: #2A3132;
+}
+#genesis-nav-primary .sub-menu a:hover {
+  background-color: #2BA12E;
+  color: white;
 }
 
 /* ## Accessible Menu
@@ -1646,6 +1673,10 @@ p.entry-meta {
   padding: 0 3px;
 }
 
+.home.page-template-esl-home .nav-primary {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -1733,7 +1764,7 @@ article.job-postings .apply-forward-print a {
   color: #2A3132;
 }
 article.job-postings .apply-forward-print a:hover {
-  color: #C3251D;
+  color: #2BA12E;
 }
 article.job-postings .apply-forward-print .two-thirds {
   text-align: center;
@@ -1806,7 +1837,7 @@ article.job-postings .job-posting-info-box {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #fff;
+  background-color: #2A3132;
   border-top: 1px solid #eee;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1815,13 +1846,22 @@ article.job-postings .job-posting-info-box {
   text-align: center;
 }
 .site-footer #menu-footer a {
-  color: #2A3132;
+  color: #white;
+}
+.site-footer #menu-footer a:hover {
+  color: #2BA12E;
 }
 
 .site-footer p {
-  color: #2A3132;
+  color: white;
   font-weight: 600;
   margin-bottom: 0;
+}
+.site-footer a {
+  color: white;
+}
+.site-footer a:hover {
+  color: #2BA12E;
 }
 
 /* # Media Queries

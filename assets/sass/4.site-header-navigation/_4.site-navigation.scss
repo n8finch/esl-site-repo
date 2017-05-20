@@ -31,7 +31,7 @@
 .genesis-nav-menu .sub-menu a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-  color: $color__autumn;
+  color: $color__green;
   text-decoration: none;
 }
 
@@ -85,4 +85,35 @@
 
 .genesis-nav-menu > .right {
   float: right;
+}
+
+#genesis-nav-primary {
+	background-color: $color__green;
+
+	@media only screen and (max-width: 1023px) {
+		background-color: white;
+
+		a {
+			color: $color__shadow;			
+		}
+	}
+
+	a:hover {
+		color: white;
+	}
+
+	.sub-menu {
+
+		li:hover {
+		}
+
+		a{
+			color: $color__shadow;
+		}
+
+		a:hover {
+			background-color: $color__green;
+			color: white;
+		}
+	}
 }

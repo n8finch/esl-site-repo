@@ -95,7 +95,7 @@
 			margin-right: 10px;
 
 			span {
-				background-color: #2BA12E;
+				background-color: $color__green;
 				color: white;
 				padding: 0 3px;
 
@@ -103,6 +103,12 @@
 		}
 	}
 
+}
+
+.home.page-template-esl-home {
+	.nav-primary {
+		display: none;
+	}
 }
 
 .hidden {
