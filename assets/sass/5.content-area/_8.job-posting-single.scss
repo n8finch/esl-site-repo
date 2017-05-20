@@ -2,6 +2,10 @@ article.job-postings {
 
 	margin-top: 50px;
 
+	@media screen and (max-width: 550px) {
+		margin-top: 0;
+	}
+
 	.apply-forward-print {
 
 		margin-bottom: 20px;
@@ -22,9 +26,14 @@ article.job-postings {
 		.one-third {
 			text-align: right;
 
+			@media screen and (max-width: 550px) {
+				margin: 20px auto;
+				text-align: center;
+			}
+
 			.fa {
 				font-size: 46px;
-				margin-left: 20px;
+				margin: 0 10px;
 			}
 		}
 	}

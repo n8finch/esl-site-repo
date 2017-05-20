@@ -14,8 +14,12 @@
 		color: #2BA12E;
 		display: inline-flex;
 		margin: 0 auto 30px;
-		// max-width: 675px;
 		width: 100%;
+
+		@media screen and (max-width: 550px) {
+			display: flex;
+			flex-direction: column;
+		}
 
 		.job-posting-singular-icon {
 			display: flex;
@@ -29,11 +33,24 @@
 			min-width: 100px;
 			text-align: center;
 			width: 35%;
+
+			@media screen and (max-width: 550px) {
+				max-width: 100%;
+				width: auto;
+
+				p {
+					margin: 0;
+				}
+			}
+
 		}
 
 		.job-posting-singular-content {
 			border: 1px solid #E1E2E6;
 			padding: 10px 20px;
+			@media screen and (max-width: 550px) {
+				text-align: center;
+			}
 
 			ul {
 				display: flex;
@@ -49,6 +66,10 @@
 					padding: 5px 20px;
 					margin: 5px 15px;
 					min-width: 185px;
+
+					@media screen and (max-width: 550px) {
+						width: 100%;
+					}
 				}
 			}
 		}
