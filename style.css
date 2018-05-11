@@ -978,6 +978,30 @@ th:first-child {
   width: 1px;
 }
 
+.search-form {
+  position: relative;
+}
+
+.search-form > input {
+  padding-left: 40px;
+}
+
+.search-form input[type="submit"] {
+  background: none !important;
+  border: none;
+  clip: inherit;
+  color: #4a545a;
+  display: inline-block;
+  font: 28px/1 'dashicons';
+  height: 38px;
+  padding: 0 10px 0 12px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  vertical-align: top;
+  width: 38px;
+}
+
 /* ## Titles
 --------------------------------------------- */
 .archive-description .entry-title,
@@ -1191,6 +1215,7 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: #2A3132;
+  background-color: #eee;
   color: #fff;
 }
 
@@ -1206,6 +1231,7 @@ img.alignright,
 }
 .header-widget-area .search-form,
 .header-widget-area input[type="search"] {
+  padding: 3px;
   width: 100%;
 }
 
@@ -1297,11 +1323,15 @@ img.alignright,
   text-align: left;
 }
 
+nav.nav-header a {
+  color: #2A3132;
+}
+
 .genesis-nav-menu a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 32px 20px;
+  padding: 25px 20px;
 }
 
 .genesis-nav-menu a:hover,

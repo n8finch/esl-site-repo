@@ -2,6 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
 	background-color: $color__shadow;
+	background-color: $body__backgroundColor;
 	color: $white;
 }
 
@@ -20,6 +21,7 @@
 
 	.search-form,
 	input[type="search"] {
+		padding: 3px;
 		width: 100%;
 	}
 }

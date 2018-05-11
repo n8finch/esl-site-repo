@@ -148,8 +148,17 @@ function esl_get_job_icon( $job_institution_type ) {
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
 //* Customize search form input box text
-add_filter( 'genesis_search_text', 'sp_search_text' );
-function sp_search_text( $text ) {
-	// return esc_attr( '<span class="fa fa-search"></span> Find a job...' );
-	return 'Find a job...';
+add_filter( 'genesis_search_text', 'esljh_search_text' );
+function esljh_search_text( $text ) {
+
+	$search_icon = file_get_contents( get_stylesheet_directory_uri() . '/images/search.svg');
+	return 'Search jobs (e.g. Seoul, university )...';
+	// return 'Find a job...';
+}
+
+add_filter( 'genesis_search_button_text', 'b3m_search_button_dashicon' );
+function b3m_search_button_dashicon( $text ) {
+
+	return esc_attr( '&#xf179;' );
+
 }

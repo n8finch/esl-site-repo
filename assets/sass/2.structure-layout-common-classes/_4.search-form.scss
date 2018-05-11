@@ -31,3 +31,29 @@
   position: absolute;
   width: 1px;
 }
+
+
+
+.search-form {
+	position: relative;
+}
+
+.search-form > input {
+    padding-left: 40px;
+}
+
+.search-form input[type="submit"] {
+    background: none !important;
+    border: none;
+    clip: inherit;
+    color: #4a545a;
+    display: inline-block;
+    font: 28px/1 'dashicons';
+    height: 38px;
+    padding: 0 10px 0 12px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    vertical-align: top;
+    width: 38px;
+}
