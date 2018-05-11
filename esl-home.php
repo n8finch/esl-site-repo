@@ -46,7 +46,8 @@ function esl_homepage_top_content() {
 		</div> -->
 
 		<div id="home-teacher-intro">
-			<h2>Where do you want to teach?</h2>
+			<h1>Where</h1>
+			<h2>do you want to teach?</h2>
 		</div>
 
 		<div id="home-location-options">
@@ -78,11 +79,11 @@ function esl_homepage_top_content() {
 				</div>
 			</a>
 
-			<a href="/#home-job-postings-section"/>
+			<!-- <a href="/#home-job-postings-section"/>
 				<div class="home-location-option-boxes see-all">
 					<span>See most recent jobs</span>
 				</div>
-			</a>
+			</a> -->
 
 
 			<!-- <div class="home-location-option-boxes">

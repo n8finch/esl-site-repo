@@ -151,7 +151,6 @@ remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 add_filter( 'genesis_search_text', 'esljh_search_text' );
 function esljh_search_text( $text ) {
 
-	$search_icon = file_get_contents( get_stylesheet_directory_uri() . '/images/search.svg');
 	return 'Search jobs (e.g. Seoul, university )...';
 	// return 'Find a job...';
 }

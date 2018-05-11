@@ -1620,8 +1620,13 @@ p.entry-meta {
   margin: 20px auto;
   max-width: 700px;
 }
-#homepage-main-section #home-teacher-intro h2 {
+#homepage-main-section #home-teacher-intro h1 {
+  color: #2BA12E;
   font-size: 3em;
+}
+#homepage-main-section #home-teacher-intro h2 {
+  color: #2BA12E;
+  font-size: 2em;
 }
 #homepage-main-section #home-filter-options,
 #homepage-main-section #home-location-options {
@@ -1629,7 +1634,7 @@ p.entry-meta {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 805px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 #homepage-main-section #home-filter-options a,
 #homepage-main-section #home-location-options a {
@@ -1653,6 +1658,7 @@ p.entry-meta {
 #homepage-main-section #home-filter-options div.home-location-option-boxes,
 #homepage-main-section #home-location-options div.home-filter-option-boxes,
 #homepage-main-section #home-location-options div.home-location-option-boxes {
+  min-height: 100px;
   position: relative;
 }
 #homepage-main-section #home-filter-options div.home-filter-option-boxes span,
@@ -1666,15 +1672,23 @@ p.entry-meta {
 #homepage-main-section #home-filter-options div.home-location-option-boxes img,
 #homepage-main-section #home-location-options div.home-filter-option-boxes img,
 #homepage-main-section #home-location-options div.home-location-option-boxes img {
-  margin-top: -50px;
-  max-width: 115px;
+  margin-top: -30px;
   transition: ease .5s;
+  width: 100px;
+  position: absolute;
+  left: 30px;
 }
-#homepage-main-section #home-filter-options div.home-filter-option-boxes img:hover,
-#homepage-main-section #home-filter-options div.home-location-option-boxes img:hover,
-#homepage-main-section #home-location-options div.home-filter-option-boxes img:hover,
-#homepage-main-section #home-location-options div.home-location-option-boxes img:hover {
-  margin-top: 0;
+@media (max-width: 550px) {
+  #homepage-main-section #home-filter-options div.home-filter-option-boxes img,
+  #homepage-main-section #home-filter-options div.home-location-option-boxes img,
+  #homepage-main-section #home-location-options div.home-filter-option-boxes img,
+  #homepage-main-section #home-location-options div.home-location-option-boxes img {
+    left: 0;
+    margin-top: -50px;
+    position: relative;
+    transition: ease .5s;
+    width: 115px;
+  }
 }
 #homepage-main-section #home-filter-options div.home-location-option-boxes.see-all,
 #homepage-main-section #home-location-options div.home-location-option-boxes.see-all {
@@ -1683,9 +1697,15 @@ p.entry-meta {
   border-radius: 5px;
   padding: 20px 40px;
 }
+#homepage-main-section #home-filter-options div.home-filter-option-boxes:hover img,
+#homepage-main-section #home-filter-options div.home-location-option-boxes:hover img,
+#homepage-main-section #home-location-options div.home-filter-option-boxes:hover img,
+#homepage-main-section #home-location-options div.home-location-option-boxes:hover img {
+  margin-top: 30px;
+}
 
 #homepage-ad-section {
-  margin: 50px auto;
+  margin: auto;
   padding: 10px 0;
 }
 #homepage-ad-section .home-location-ad-box {
