@@ -145,7 +145,7 @@
   .menu-toggle,
   .sub-menu-toggle {
     border-width: 0;
-    background-color: #fff;
+    background-color: $body__backgroundColor;
     color: #333;
     display: block;
     margin: 0 auto;
@@ -160,7 +160,7 @@
   }
 
   .menu-toggle {
-    border-top: 1px solid #eee;
+    border-top: 1px solid $body__backgroundColor;
     line-height: 20px;
     position: relative;
     right: 0;
@@ -253,7 +253,7 @@
   .js nav button:hover,
   .js .menu-toggle:hover,
   .js .nav-primary {
-    background-color: #fff;
+    background-color: $body__backgroundColor;
     color: #000;
   }
 

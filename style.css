@@ -1246,6 +1246,7 @@ img.alignright,
 .title-area {
   float: left;
   padding: 10px 0;
+  position: relative;
   width: 300px;
 }
 
@@ -1268,6 +1269,13 @@ img.alignright,
 
 .site-title::before {
   transform: rotate(20deg);
+}
+
+div.header-logo-container {
+  position: absolute;
+  left: -20px;
+  max-width: 50px;
+  top: 30px;
 }
 
 .header-image .title-area {
@@ -1327,6 +1335,10 @@ img.alignright,
 nav.nav-header a {
   color: #2A3132;
   font-size: 13px;
+}
+
+nav.nav-header .social-menu-item a {
+  padding: 5px;
 }
 
 .genesis-nav-menu a {
@@ -2103,7 +2115,7 @@ article.job-postings .job-posting-info-box {
   .menu-toggle,
   .sub-menu-toggle {
     border-width: 0;
-    background-color: #fff;
+    background-color: #F3F3F3;
     color: #333;
     display: block;
     margin: 0 auto;
@@ -2118,7 +2130,7 @@ article.job-postings .job-posting-info-box {
   }
 
   .menu-toggle {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #F3F3F3;
     line-height: 20px;
     position: relative;
     right: 0;
@@ -2211,7 +2223,7 @@ article.job-postings .job-posting-info-box {
   .js nav button:hover,
   .js .menu-toggle:hover,
   .js .nav-primary {
-    background-color: #fff;
+    background-color: #F3F3F3;
     color: #000;
   }
 

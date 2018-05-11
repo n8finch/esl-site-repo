@@ -4,6 +4,7 @@
 .title-area {
   float: left;
   padding: 10px 0;
+  position: relative;
   width: 300px;
 }
 
@@ -28,6 +29,13 @@
 .site-title::before {
   // content: url('images/teacher-stick-figure-transparent-white-50-rotate.png');
   transform: rotate(20deg);
+}
+
+div.header-logo-container {
+    position: absolute;
+    left: -20px;
+    max-width: 50px;
+    top: 30px;
 }
 
 .header-image {

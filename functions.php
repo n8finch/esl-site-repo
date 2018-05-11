@@ -143,6 +143,15 @@ function esl_get_job_icon( $job_institution_type ) {
 
 }
 
+add_action( 'genesis_site_title', 'esljh_add_logo_header' );
+
+function esljh_add_logo_header() {
+	?>
+	<div class="header-logo-container">
+		<img src="<?php echo get_stylesheet_directory_uri() . '/images/stickfigureblack.png' ; ?>" alt="teacher image">
+	</div>
+	<?php
+}
 
 //* Remove the site description
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
