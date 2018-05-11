@@ -144,7 +144,7 @@ function esl_homepage_job_postings_section() {
 		<!-- Job Postings -->
 		<div class="two-thirds first job-postings-container">
 			<h2>Most Recent Jobs</h2>
-			<div id="legened">
+			<!-- <div id="legened">
 				<ul>
 					<li>
 						<span class"job-posting-legend">U</span> = University
@@ -165,7 +165,7 @@ function esl_homepage_job_postings_section() {
 						<span class"job-posting-legend">O</span> = Other
 					</li>
 				</ul>
-			</div>
+			</div> -->
 
 			<?php
 			$args = array(
