@@ -148,7 +148,7 @@ add_action( 'genesis_site_title', 'esljh_add_logo_header' );
 function esljh_add_logo_header() {
 	?>
 	<div class="header-logo-container">
-		<img src="<?php echo get_stylesheet_directory_uri() . '/images/stickfigureblack.png' ; ?>" alt="teacher image">
+		<img src="<?php echo get_stylesheet_directory_uri() . '/images/female-teacher.png' ; ?>" alt="teacher image">
 	</div>
 	<?php
 }
