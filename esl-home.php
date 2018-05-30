@@ -143,7 +143,7 @@ function esl_homepage_job_postings_section() {
 
 		<!-- Job Postings -->
 		<div class="two-thirds first job-postings-container">
-			<h2>Most Recent Jobs</h2>
+			<!-- <h2>Most Recent Jobs</h2> -->
 			<!-- <div id="legened">
 				<ul>
 					<li>

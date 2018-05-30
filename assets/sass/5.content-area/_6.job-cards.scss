@@ -14,7 +14,9 @@
 		color: #2BA12E;
 		display: inline-flex;
 		margin: 0 auto 30px;
+		transition: 0.5s all ease;
 		width: 100%;
+
 
 		@media screen and (max-width: 550px) {
 			display: flex;
@@ -29,18 +31,39 @@
 			border: 1px solid #E1E2E6;
 			color: white;
 			font-size: 4em;
-			max-width: 100px;
-			min-width: 100px;
+			max-width: 135px;
+			min-width: 135px;
+			position: relative;
 			text-align: center;
 			width: 35%;
 
 			@media screen and (max-width: 550px) {
+				display: none;
 				max-width: 100%;
 				width: auto;
 
-				p {
+				div {
 					margin: 0;
 				}
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				position: absolute;
+				transition: 0.5s all ease;
+				width: 100%;
+			}
+
+			.job-posting-icon {
+				opacity: 1;
+			}
+
+			.job-posting-title {
+				font-size: 16px;
+				opacity: 0;
 			}
 
 		}
@@ -81,6 +104,14 @@
 		-webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.35);
 		-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.35);
 		box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.35);
+
+		.job-posting-icon {
+			opacity: 0;
+		}
+
+		.job-posting-title {
+			opacity: 1;
+		}
 	}
 
 }

@@ -1770,6 +1770,7 @@ p.entry-meta {
   color: #2BA12E;
   display: inline-flex;
   margin: 0 auto 30px;
+  transition: 0.5s all ease;
   width: 100%;
 }
 @media screen and (max-width: 550px) {
@@ -1786,19 +1787,37 @@ p.entry-meta {
   border: 1px solid #E1E2E6;
   color: white;
   font-size: 4em;
-  max-width: 100px;
-  min-width: 100px;
+  max-width: 135px;
+  min-width: 135px;
+  position: relative;
   text-align: center;
   width: 35%;
 }
 @media screen and (max-width: 550px) {
   .job-postings-container .job-posting-singular .job-posting-singular-icon {
+    display: none;
     max-width: 100%;
     width: auto;
   }
-  .job-postings-container .job-posting-singular .job-posting-singular-icon p {
+  .job-postings-container .job-posting-singular .job-posting-singular-icon div {
     margin: 0;
   }
+}
+.job-postings-container .job-posting-singular .job-posting-singular-icon div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s all ease;
+  width: 100%;
+}
+.job-postings-container .job-posting-singular .job-posting-singular-icon .job-posting-icon {
+  opacity: 1;
+}
+.job-postings-container .job-posting-singular .job-posting-singular-icon .job-posting-title {
+  font-size: 16px;
+  opacity: 0;
 }
 .job-postings-container .job-posting-singular .job-posting-singular-content {
   border: 1px solid #E1E2E6;
@@ -1835,6 +1854,12 @@ p.entry-meta {
   -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
+}
+.job-postings-container .job-posting-singular:hover .job-posting-icon {
+  opacity: 0;
+}
+.job-postings-container .job-posting-singular:hover .job-posting-title {
+  opacity: 1;
 }
 
 .job-postings-sidebar {
