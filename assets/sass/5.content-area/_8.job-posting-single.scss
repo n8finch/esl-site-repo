@@ -45,6 +45,12 @@ article.job-postings {
 		padding: 20px;
 	}
 }
+
+.gform_wrapper li.gfield div.gfield_description,
+.gform_wrapper li.gfield div.ginput_container.ginput_container_checkbox {
+    font-size: 16px;
+}
+
 @media print {
 	.no-print {
 		display: none;

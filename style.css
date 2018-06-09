@@ -1433,6 +1433,10 @@ nav.nav-header .social-menu-item a {
   color: white;
 }
 
+#menu-secondary .menu-item > a {
+  padding: 13px 20px;
+}
+
 /* ## Accessible Menu
 --------------------------------------------- */
 .menu .menu-item:focus {
@@ -1723,7 +1727,6 @@ p.entry-meta {
   padding: 10px 0;
 }
 #homepage-ad-section .home-location-ad-box {
-  background-color: white;
   height: 90px;
   margin: 10px auto;
   text-align: center;
@@ -1919,6 +1922,11 @@ article.job-postings .job-posting-info-box {
   font-size: 16px;
   margin-bottom: 20px;
   padding: 20px;
+}
+
+.gform_wrapper li.gfield div.gfield_description,
+.gform_wrapper li.gfield div.ginput_container.ginput_container_checkbox {
+  font-size: 16px;
 }
 
 @media print {

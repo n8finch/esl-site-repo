@@ -130,7 +130,7 @@ function esl_homepage_ad_section() {
 	?>
 	<section id="homepage-ad-section">
 		<div class="home-location-ad-box">
-			<h3>Advertisement goes here</h3>
+			<a href="http://listeninenglish.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/images/l_i_e_advert_jpg__728×90_.png'?>" alt="homepage ad" /></a>
 		</div>
 	</section>
 
@@ -170,7 +170,7 @@ function esl_homepage_job_postings_section() {
 			<?php
 			$args = array(
 				'post_type' => 'job-postings', // enter your custom post type
-				'order' => 'ASC',
+				'order' => 'DESC',
 				'posts_per_page'=> '10',  // overrides posts per page in theme settings
 			);
 			$loop = new WP_Query( $args );
