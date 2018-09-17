@@ -95,13 +95,13 @@
 }
 
 #homepage-ad-section {
-	// background-color: #2A3132;
+	border: 1px solid #ccc;
 	margin: auto;
 	padding: 10px 0;
 
 	.home-location-ad-box {
 		// background-color: white;
-		height: 90px;
+		height: 110px;
 		margin: 10px auto;
 		text-align: center;
 		width: 728px;
@@ -110,6 +110,10 @@
 			width: auto;
 		}
 	}
+}
+
+#home-job-postings-section {
+	margin-top: 40px;
 }
 
 #legened {

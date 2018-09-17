@@ -45,6 +45,7 @@ function esl_single_job_posting_content() {
 
 
 	$job_school_name = array_key_exists ( 'jp_school_name', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_school_name', true ) : 'not given';
+	$job_recruiting_company = array_key_exists ( 'jp_recruiting_company', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_recruiting_company', true ) : 'not given';
 	$job_job_description = array_key_exists ( 'jp_job_description', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_job_description', true ) : 'not given';
 	$job_contact_email = array_key_exists ( 'jp_contact_email', $job_post_meta ) ? get_post_meta( $post->ID, 'jp_contact_email', true ) : 'not given';
 
@@ -91,6 +92,7 @@ function esl_single_job_posting_content() {
 		<div class="job-posting-info-box">
 			<h4>Contact:</h4>
 			<strong>School Name: </strong><?php echo $job_school_name; ?><br/>
+			<strong>Recruiting Company: </strong><?php echo $job_recruiting_company; ?><br/>
 			<strong>Contact Email: </strong><?php echo $job_contact_email; ?><br/>
 		</div>
 

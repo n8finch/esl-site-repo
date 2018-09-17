@@ -63,11 +63,11 @@
 
             var value = $(this).val();
 
-            if( value === '0 KRW - 2,000,00 KRW' ) {
+            if (value === '0  - 2 mil KRW' ) {
                 value = 236;
-            } else if( value === '2,000,000 KRW - 3,000,000 KRW' ) {
+            } else if (value === '2 - 3 mil KRW' ) {
                 value = 235;
-            } else if( value === '3,000,000 KRW or more' ) {
+            } else if (value === '3 mil KRW or more' ) {
                 value = 234;
             }
 

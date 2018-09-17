@@ -46,8 +46,7 @@ function esl_homepage_top_content() {
 		</div> -->
 
 		<div id="home-teacher-intro">
-			<h1>Where</h1>
-			<h2>do you want to teach?</h2>
+			<h1>Where do you want to teach?</h1>
 		</div>
 
 		<div id="home-location-options">
@@ -130,7 +129,7 @@ function esl_homepage_ad_section() {
 	?>
 	<section id="homepage-ad-section">
 		<div class="home-location-ad-box">
-			<a href="http://listeninenglish.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/images/l_i_e_advert_jpg__728×90_.png'?>" alt="homepage ad" /></a>
+			<a href="https://www.koreaworks.co.kr/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() . '/images/koreaworks-logo.png'?>" alt="homepage ad" /></a>
 		</div>
 	</section>
 

@@ -1723,11 +1723,12 @@ p.entry-meta {
 }
 
 #homepage-ad-section {
+  border: 1px solid #ccc;
   margin: auto;
   padding: 10px 0;
 }
 #homepage-ad-section .home-location-ad-box {
-  height: 90px;
+  height: 110px;
   margin: 10px auto;
   text-align: center;
   width: 728px;
@@ -1736,6 +1737,10 @@ p.entry-meta {
   #homepage-ad-section .home-location-ad-box {
     width: auto;
   }
+}
+
+#home-job-postings-section {
+  margin-top: 40px;
 }
 
 #legened ul {
